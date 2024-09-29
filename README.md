@@ -2,7 +2,8 @@
 
 ## Description
 
-md-notes-filter is a UNIX command-line style filter that transforms notes written in Markdown using templates and/or command line arguments. 
+md-notes-filter is a UNIX command-line style filter that transforms notes written in Markdown using templates and/or command line arguments.
+
 It can work in conjunction with [Obsidian](https://obsidian.md) and its [Templater](https://silentvoid13.github.io/Templater/) plugin using
 [Templater System Commands](https://silentvoid13.github.io/Templater/user-functions/system-user-functions.html).
 
