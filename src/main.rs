@@ -1,13 +1,14 @@
-use std::env;
+use clap::Parser;
+
+#[derive(Parser, Debug)]
+#[command(author, version, about, long_about = None)]
+struct Args {
+    #[arg(short, long)]
+    input_file: String,
+}
 
 fn main() {
-    let args: Vec<String> = env::args().collect();
-    
-    if args.len() < 2 {
-        println!("Please provide a file name as an argument.");
-        return;
-    }
+    let args = Args::parse();
 
-    let file = &args[1];
-    println!("File argument provided: {}", file);
+    println!("Input file argument provided: {}", args.input_file);
 }
